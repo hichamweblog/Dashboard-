@@ -1,0 +1,143 @@
+*::before,
+*::after,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	font-family: Poppins;
+	font-style: normal;
+	line-height: 111.4%;
+	background-image: url(./background.jpg);
+	background-color: #221F26;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+body::before {
+	z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #221f265a;
+}
+.nav{
+width: 213px;
+background: #2C2931;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+position: absolute;
+top: 0;
+left: 0;
+min-height: 102vh;
+display: none;
+z-index: 2;
+}
+.nav a{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 111.4%;
+	text-align: left;
+	width: 100%;
+	padding:0.56rem 2.75rem;
+	transition: background 0.3s ease-out, font-weight 0.3s ease-out;
+}
+.nav a:hover{
+background: #4497FF;
+font-weight: 700;
+}
+.return{
+	display: block;
+	cursor: pointer;
+	margin:2.56rem 2.75rem;
+}
+.menu{
+position: absolute;
+left: 2rem;
+top: 1.5rem;
+cursor: pointer;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+color: #2D7DFF;
+font-size: 1.5rem;
+font-weight: 800;
+letter-spacing: -0.18rem;
+margin-top: 1.5rem;
+}
+.hero{
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+justify-content: center;
+padding: 0 3rem;
+}
+.heading{
+font-size: 3rem;
+font-weight: 800;
+line-height: 89%;
+margin-bottom: 2.31rem;
+}
+.sub-heading{
+color: #847D93;
+font-size: 2.125rem;
+font-weight: 300;
+line-height: 111.4%;
+margin-bottom: 2.88rem;
+}
+.cta{
+border: 1px solid #4D4D4D;
+color: #FFF;
+font-size: 1.125rem;
+font-weight: 700;
+display: flex;
+align-items: center;
+gap: 1rem;
+text-decoration: none;
+padding: 1.25rem 1.5rem;
+width: fit-content;
+transition: background 0.3s ease-out;
+}
+.cta:hover{
+background: #00A3FF;
+}
+
+@media (min-width:767px){
+.menu{
+	display: none;
+}
+.return{
+	display: none;
+}
+.nav{
+display: block;
+height: 100vh;
+padding: 3.62rem 0;
+
+}
+.hero{
+	margin-left: 18rem;
+}
+.header{
+	justify-content: flex-start;
+}
+.logo{
+	margin: 3.5rem 21rem;
+}
+}
